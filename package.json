@@ -1,0 +1,18 @@
+{
+  "name": "spotisearch",
+  "version": "1.0.0",
+  "description": "a react native app to browse spotify API data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sofyen selmane",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
