@@ -1,11 +1,13 @@
 const express = require('express')
-
 const app = express()
+
+//init middleware
+app.use(express.json({ extended: false }))
 
 app.get('/', (req, res) => res.send('API running'))
 
-//routes under link /api/users to the / in /routes/api/users
-// app.use('/api/users', require('./routes/api/users'))
+//routes under link /api/search to the / in /routes/api/search
+app.use('/api/search', require('./routes/api/search'))
 
 const PORT = process.env.PORT || 5000
 

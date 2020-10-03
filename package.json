@@ -1,18 +1,24 @@
 {
-  "name": "spotisearch",
-  "version": "1.0.0",
-  "description": "a react native app to browse spotify API data",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "sofyen selmane",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "concurrently": "^5.3.0",
-    "nodemon": "^2.0.4"
-  }
+	"name": "spotisearch",
+	"version": "1.0.0",
+	"description": "a react native app to browse spotify API data",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server",
+		"server": "nodemon server",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "sofyen selmane",
+	"license": "ISC",
+	"dependencies": {
+		"config": "^3.3.2",
+		"express": "^4.17.1",
+		"spotify-web-api-node": "^4.0.0"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"nodemon": "^2.0.4"
+	}
 }
